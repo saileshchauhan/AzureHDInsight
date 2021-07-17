@@ -18,10 +18,10 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ‘,’
 LINES TERMINATED BY ‘\n’
 STORED AS TEXTFILE
-LOCATION ‘wasbs:///hadoopcluster@hadoopStorage.blob.core.windows.net/processed_csv/country_covid.csv’;
+LOCATION ‘__Give file path where to store this table___’;
 
 --provide path of file
-LOAD DATA INPATH “wasbs:///hadoopcluster@hadoopStorage.blob.core.windows.net/processed_csv/country_covid.csv” INTO TABLE coutry_covid19;
+LOAD DATA INPATH “_____Enter path to stored file name country.csv in azure storage account______” INTO TABLE coutry_covid19;
 
 --Find out top 10 countries Most affected by Deaths
 

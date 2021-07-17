@@ -16,9 +16,9 @@ FIELDS TERMINATED BY ‘,’
 LINES TERMINATED BY ‘\n’
 STORED AS TEXTFILE
 
-LOCATION ‘wasbs:///hadoopcluster@hadoopStorage.blob.core.windows.net/processed_csv/date_wise_covid19.csv’;
+LOCATION ‘__give file path to storage account in Azure where this table will be stored’;
 
-LOAD DATA INPATH ‘wasbs:///hadoopcluster@hadoopStorage.blob.core.windows.net/processed_csv/date_wise_covid19.csv’
+LOAD DATA INPATH ‘__give file path for date_wise-covid19.csv in Azure storage account’
 
 
 --Find out on which days having highest Recovered
